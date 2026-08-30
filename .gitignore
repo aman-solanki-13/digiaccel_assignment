@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Builds
+dist/
+build/
+.next/
+.expo/
+.expo-shared/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS / temporary
+*.tmp
+*.temp
