@@ -11,6 +11,7 @@ export async function register({ name, email, password, role }) {
     const user = await User.create({ name, email, password, role });
     const token = signToken({ sub: user._id.toString(), role: user.role });
 
+    user.password = undefined;
     return { user, token };
 }
 
